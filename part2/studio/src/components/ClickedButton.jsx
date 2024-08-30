@@ -1,5 +1,13 @@
+import React from 'react';
+import './styling.css';
+
 function ClickedButton() {
-  return;
+  const handleClick = () => alert('You are removing this pin!');
+  return (
+    <button id="clickedButton" onClick={handleClick}>
+      Saved
+    </button>
+  );
 }
 
 export default ClickedButton;
